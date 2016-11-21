@@ -13,8 +13,5 @@ class Restaurant < ActiveRecord::Base
     self.reviews.count == 0 ? "No ratings yet" : self.reviews.average(:rating).round
   end
 
-  # def picture
-  #   p params[:picture]
-  # end
 
 end
